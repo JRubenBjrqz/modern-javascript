@@ -9,9 +9,11 @@ let a = 10,
 
 const saludo = c + d;
 
-// console.log('%c Hello World', 'color: blue; font-weight: bold');    
+// console.log('%c Hello World', 'color: pink; font-weight: bold;');    
 // console.log( { a } );
 // console.log( { b } );
 // console.log( { c } );
+
+c = 'Hello again';
 
 // console.table({ a, b, c, d, x });
