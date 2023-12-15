@@ -1,4 +1,3 @@
-
 // alert('This is an alert');
 
 // console.log(console.log('Hello World'));
@@ -20,4 +19,4 @@ c = 'Hello again';
 
 // console.table({ a, b, c, d, x });
 
-var myName = 'Rubén';
+let myNewName = 'Rubén Bojórquez';
