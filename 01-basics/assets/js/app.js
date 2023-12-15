@@ -1,4 +1,6 @@
 
+// alert('This is an alert');
+
 // console.log(console.log('Hello World'));
 
 let a = 10,
@@ -7,7 +9,7 @@ let a = 10,
     d = 'Spiderman',
     x = a + b;
 
-const saludo = c + d;
+const greeting = c + d;
 
 // console.log('%c Hello World', 'color: pink; font-weight: bold;');    
 // console.log( { a } );
@@ -17,3 +19,5 @@ const saludo = c + d;
 c = 'Hello again';
 
 // console.table({ a, b, c, d, x });
+
+var myName = 'Rubén';
