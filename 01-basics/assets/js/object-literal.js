@@ -1,3 +1,10 @@
+//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+//Use let if I plan to add more properties to my 
+//object, and if I don't want it to change, use const
+//If I use const, I will not be able to change the
+//property values
+
 let character = {
     name: 'Tony Stark',
     codeName: 'Ironman',
@@ -30,4 +37,29 @@ const x = 'alive';
 console.log( 'Alive', character[x] );
 
 console.log( 'Last movie', character['last-movie'] );
+
+//Details
+
+//This reserved word removes the property
+delete character.age;
+console.log( character );
+
+character.married = true;
+
+// Value pairs
+const pairEntries = Object.entries( character );
+console.log( pairEntries );
+
+// character = true;
+console.log( character );
+
+Object.freeze( character );
+
+character.money = 10000000;
+character.money = false;
+console.log( character );
+
+const properties = Object.getOwnPropertyNames( character );
+const values = Object.values( character );
+console.log( properties, values );
 
