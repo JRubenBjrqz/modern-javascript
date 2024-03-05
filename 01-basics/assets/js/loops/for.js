@@ -19,3 +19,4 @@ console.warn( 'For of' );
 for( let hero of heroes ) {
     console.log( hero );
 }
+
