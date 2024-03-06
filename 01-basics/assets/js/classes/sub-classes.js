@@ -55,7 +55,7 @@ class Hero extends Person{
 
     whoAmI() {
         console.log( `I'm ${ this.name }, ${ this.clan }` );
-        super.whoAmI();
+        super.whoAmI(); 
     }
 
 }
