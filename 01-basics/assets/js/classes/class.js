@@ -3,6 +3,7 @@ class Persona {
     name = '';
     code = '';
     quote = '';
+    food = '';
 
     constructor(
         name = 'No name',
@@ -12,6 +13,14 @@ class Persona {
         this.name = name;
         this.code = code;
         this.quote = quote;
+    }
+
+    set setFavoriteFood( food ) {
+        this.food = food.toUpperCase();
+    }
+
+    get getFavoriteFood() {
+        return `${ this.nombre }'s favorite food is ${ this.food }`
     }
 
     whoAmI() {
@@ -27,5 +36,10 @@ class Persona {
 const spiderman = new Persona( 'Peter Parker', 'Spiderman', 'Friendly, neighborhood Spider-Man.'  );
 const ironman = new Persona( 'Tony Stark', 'Ironman', 'I\'m Ironman'  );
 
+spiderman.myQuote();
+// console.log( ironman );
+
+spiderman.setFavoriteFood = 'Aunt May\'s cherry pie';
+
+console.log( spiderman.getFavoriteFood );
 console.log( spiderman );
-console.log( ironman );
